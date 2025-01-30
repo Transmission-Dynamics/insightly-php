@@ -1,5 +1,5 @@
 {
-    "name": "/",
+    "name": "insightly/insightly",
     "description": "",
     "keywords": [
         "swagger",
@@ -25,21 +25,12 @@
     "require-dev": {
         "phpunit/phpunit": "^4.8",
         "squizlabs/php_codesniffer": "~2.6",
-        "friendsofphp/php-cs-fixer": "~1.12"
+        "friendsofphp/php-cs-fixer": "~3.0"
     },
     "autoload": {
         "psr-4": { "Swagger\\Client\\" : "lib/" }
     },
     "autoload-dev": {
         "psr-4": { "Swagger\\Client\\" : "test/" }
-    },
-    "repositories": [
-        {
-          "type": "git",
-          "url": "https://github.com//.git"
-        }
-      ],
-      "require": {
-        "/": "*@dev"
-      }
+    }
 }
