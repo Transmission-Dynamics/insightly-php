@@ -1,13 +1,13 @@
 # Swagger\Client\TasksApi
 
-All URIs are relative to *https://api.insightly.com/v3.0*
+All URIs are relative to *https://api.insightly.com/v3.1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**addComment**](TasksApi.md#addComment) | **POST** /Tasks/{id}/Comments | Adds a Comment to a Task
 [**addEntity**](TasksApi.md#addEntity) | **POST** /Tasks | Adds a Task
 [**addFollow**](TasksApi.md#addFollow) | **POST** /Tasks/{id}/Follow | Start following a Task
-[**addLink**](TasksApi.md#addLink) | **POST** /v3.0/Tasks/{id}/Links | Adds a Link
+[**addLink**](TasksApi.md#addLink) | **POST** /v3.1/Tasks/{id}/Links | Adds a Link
 [**deleteEntity**](TasksApi.md#deleteEntity) | **DELETE** /Tasks/{id} | Deletes a Task
 [**deleteFollow**](TasksApi.md#deleteFollow) | **DELETE** /Tasks/{id}/Follow | Stop following a Task
 [**deleteLink**](TasksApi.md#deleteLink) | **DELETE** /Tasks/{id}/Links/{linkId} | Deletes a Link
@@ -16,7 +16,7 @@ Method | HTTP request | Description
 [**getEntitiesBySearch**](TasksApi.md#getEntitiesBySearch) | **GET** /Tasks/Search | Gets a filtered list of Tasks
 [**getEntity**](TasksApi.md#getEntity) | **GET** /Tasks/{id} | Gets a Task
 [**getFollow**](TasksApi.md#getFollow) | **GET** /Tasks/{id}/Follow | Gets a Follow state for a Task
-[**getLinks**](TasksApi.md#getLinks) | **GET** /v3.0/Tasks/{id}/Links | Gets a Task&#39;s Links
+[**getLinks**](TasksApi.md#getLinks) | **GET** /v3.1/Tasks/{id}/Links | Gets a Task&#39;s Links
 [**updateEntity**](TasksApi.md#updateEntity) | **PUT** /Tasks | Updates a Task
 
 
@@ -744,4 +744,3 @@ No authorization required
  - **Accept**: application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
-

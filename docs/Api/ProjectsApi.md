@@ -1,6 +1,6 @@
 # Swagger\Client\ProjectsApi
 
-All URIs are relative to *https://api.insightly.com/v3.0*
+All URIs are relative to *https://api.insightly.com/v3.1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -8,8 +8,8 @@ Method | HTTP request | Description
 [**addEntity**](ProjectsApi.md#addEntity) | **POST** /Projects | Adds a Project
 [**addFileAttachment**](ProjectsApi.md#addFileAttachment) | **POST** /Projects/{id}/FileAttachments | Adds a File Attachment to a Project
 [**addFollow**](ProjectsApi.md#addFollow) | **POST** /Projects/{id}/Follow | Start following a Project
-[**addLink**](ProjectsApi.md#addLink) | **POST** /v3.0/Projects/{id}/Links | Adds a Link
-[**addMilestone**](ProjectsApi.md#addMilestone) | **POST** /v3.0/Projects/{id}/Milestones | Adds a Milestone
+[**addLink**](ProjectsApi.md#addLink) | **POST** /v3.1/Projects/{id}/Links | Adds a Link
+[**addMilestone**](ProjectsApi.md#addMilestone) | **POST** /v3.1/Projects/{id}/Milestones | Adds a Milestone
 [**addNotes**](ProjectsApi.md#addNotes) | **POST** /Projects/{id}/Notes | Adds a Note to a Project
 [**addTag**](ProjectsApi.md#addTag) | **POST** /Projects/{id}/Tags | Adds a Tag
 [**deleteEntity**](ProjectsApi.md#deleteEntity) | **DELETE** /Projects/{id} | Deletes a Project
@@ -29,14 +29,14 @@ Method | HTTP request | Description
 [**getFollow**](ProjectsApi.md#getFollow) | **GET** /Projects/{id}/Follow | Gets a Follow state for a Project
 [**getImage**](ProjectsApi.md#getImage) | **GET** /Projects/{id}/Image | Gets a Project&#39;s Image
 [**getLinkEmailAddress**](ProjectsApi.md#getLinkEmailAddress) | **GET** /Projects/{id}/LinkEmailAddress | Gets the email address to use for linking with the Project
-[**getLinks**](ProjectsApi.md#getLinks) | **GET** /v3.0/Projects/{id}/Links | Gets a Project&#39;s Links
-[**getMilestones**](ProjectsApi.md#getMilestones) | **GET** /v3.0/Projects/{id}/Milestones | Gets a list of a Project&#39;s Milestones
+[**getLinks**](ProjectsApi.md#getLinks) | **GET** /v3.1/Projects/{id}/Links | Gets a Project&#39;s Links
+[**getMilestones**](ProjectsApi.md#getMilestones) | **GET** /v3.1/Projects/{id}/Milestones | Gets a list of a Project&#39;s Milestones
 [**getNotes**](ProjectsApi.md#getNotes) | **GET** /Projects/{id}/Notes | Gets a Project&#39;s Notes
 [**getTasks**](ProjectsApi.md#getTasks) | **GET** /Projects/{id}/Tasks | Gets a list of a Project&#39;s Tasks
 [**updateEntity**](ProjectsApi.md#updateEntity) | **PUT** /Projects | Updates a Project
 [**updateImage**](ProjectsApi.md#updateImage) | **PUT** /Projects/{id}/Image/{filename} | Updates a Project&#39;s Image
-[**updateLink**](ProjectsApi.md#updateLink) | **PUT** /v3.0/Projects/{id}/Links | Updates a Link
-[**updateMilestone**](ProjectsApi.md#updateMilestone) | **PUT** /v3.0/Projects/{id}/Milestones | Updates a Milestone
+[**updateLink**](ProjectsApi.md#updateLink) | **PUT** /v3.1/Projects/{id}/Links | Updates a Link
+[**updateMilestone**](ProjectsApi.md#updateMilestone) | **PUT** /v3.1/Projects/{id}/Milestones | Updates a Milestone
 [**updateNotes**](ProjectsApi.md#updateNotes) | **PUT** /Projects/{id}/Notes | Updates a note of a Project
 [**updatePipeline**](ProjectsApi.md#updatePipeline) | **PUT** /Projects/{id}/Pipeline | Changes current pipeline for the Project
 [**updatePipelineStage**](ProjectsApi.md#updatePipelineStage) | **PUT** /Projects/{id}/PipelineStage | Changes current pipeline stage for the Project
@@ -164,9 +164,9 @@ $apiInstance = new Swagger\Client\Api\ProjectsApi(
 $id = 789; // int | Record ID
 $file = "/path/to/file.txt"; // \SplFileObject | The file part of the multipart/form-data request. Only one file can be added per request.
 $authorization = "{{Authorization}}"; // string | Authorization
-$file_name = "file_name_example"; // string | 
-$content_type = "content_type_example"; // string | 
-$file_category_id = 56; // int | 
+$file_name = "file_name_example"; // string |
+$content_type = "content_type_example"; // string |
+$file_category_id = 56; // int |
 
 try {
     $result = $apiInstance->addFileAttachment($id, $file, $authorization, $file_name, $content_type, $file_category_id);
@@ -1937,4 +1937,3 @@ No authorization required
  - **Accept**: application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
-

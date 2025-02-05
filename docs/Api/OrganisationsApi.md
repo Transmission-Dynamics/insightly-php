@@ -1,6 +1,6 @@
 # Swagger\Client\OrganisationsApi
 
-All URIs are relative to *https://api.insightly.com/v3.0*
+All URIs are relative to *https://api.insightly.com/v3.1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 [**addEntity**](OrganisationsApi.md#addEntity) | **POST** /Organisations | Adds an Organization
 [**addFileAttachment**](OrganisationsApi.md#addFileAttachment) | **POST** /Organisations/{id}/FileAttachments | Adds a File Attachment to an Organization
 [**addFollow**](OrganisationsApi.md#addFollow) | **POST** /Organisations/{id}/Follow | Start following an Organization
-[**addLink**](OrganisationsApi.md#addLink) | **POST** /v3.0/Organisations/{id}/Links | Adds a Link
+[**addLink**](OrganisationsApi.md#addLink) | **POST** /v3.1/Organisations/{id}/Links | Adds a Link
 [**addNotes**](OrganisationsApi.md#addNotes) | **POST** /Organisations/{id}/Notes | Adds a Note to an Organization
 [**addTag**](OrganisationsApi.md#addTag) | **POST** /Organisations/{id}/Tags | Adds a Tag
 [**deleteDate**](OrganisationsApi.md#deleteDate) | **DELETE** /Organisations/{id}/Dates/{dateId} | Deletes a Date
@@ -29,14 +29,14 @@ Method | HTTP request | Description
 [**getFileAttachments**](OrganisationsApi.md#getFileAttachments) | **GET** /Organisations/{id}/FileAttachments | Gets an Organization&#39;s File Attachments
 [**getFollow**](OrganisationsApi.md#getFollow) | **GET** /Organisations/{id}/Follow | Gets a Follow state for an Organization
 [**getImage**](OrganisationsApi.md#getImage) | **GET** /Organisations/{id}/Image | Gets an Organization&#39;s Image
-[**getLinks**](OrganisationsApi.md#getLinks) | **GET** /v3.0/Organisations/{id}/Links | Gets an Organization&#39;s Links
+[**getLinks**](OrganisationsApi.md#getLinks) | **GET** /v3.1/Organisations/{id}/Links | Gets an Organization&#39;s Links
 [**getNotes**](OrganisationsApi.md#getNotes) | **GET** /Organisations/{id}/Notes | Gets an Organization&#39;s Notes
 [**getTasks**](OrganisationsApi.md#getTasks) | **GET** /Organisations/{id}/Tasks | Gets a list of an Organization&#39;s Tasks
 [**updateDate**](OrganisationsApi.md#updateDate) | **PUT** /Organisations/{id}/Dates | Updates a Date
 [**updateEmailDomain**](OrganisationsApi.md#updateEmailDomain) | **PUT** /Organisations/{id}/EmailDomains | Updates an Email Domain
 [**updateEntity**](OrganisationsApi.md#updateEntity) | **PUT** /Organisations | Updates an Organization
 [**updateImage**](OrganisationsApi.md#updateImage) | **PUT** /Organisations/{id}/Image/{filename} | Updates an Organization&#39;s Image
-[**updateLink**](OrganisationsApi.md#updateLink) | **PUT** /v3.0/Organisations/{id}/Links | Updates a Link
+[**updateLink**](OrganisationsApi.md#updateLink) | **PUT** /v3.1/Organisations/{id}/Links | Updates a Link
 [**updateNotes**](OrganisationsApi.md#updateNotes) | **PUT** /Organisations/{id}/Notes | Updates a note of an Organization
 
 
@@ -264,9 +264,9 @@ $apiInstance = new Swagger\Client\Api\OrganisationsApi(
 $id = 789; // int | Record ID
 $file = "/path/to/file.txt"; // \SplFileObject | The file part of the multipart/form-data request. Only one file can be added per request.
 $authorization = "{{Authorization}}"; // string | Authorization
-$file_name = "file_name_example"; // string | 
-$content_type = "content_type_example"; // string | 
-$file_category_id = 56; // int | 
+$file_name = "file_name_example"; // string |
+$content_type = "content_type_example"; // string |
+$file_category_id = 56; // int |
 
 try {
     $result = $apiInstance->addFileAttachment($id, $file, $authorization, $file_name, $content_type, $file_category_id);
@@ -1837,4 +1837,3 @@ No authorization required
  - **Accept**: application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
-

@@ -1,6 +1,6 @@
 # Swagger\Client\ContactsApi
 
-All URIs are relative to *https://api.insightly.com/v3.0*
+All URIs are relative to *https://api.insightly.com/v3.1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**addEntity**](ContactsApi.md#addEntity) | **POST** /Contacts | Adds a Contact
 [**addFileAttachment**](ContactsApi.md#addFileAttachment) | **POST** /Contacts/{id}/FileAttachments | Adds a File Attachment to a Contact
 [**addFollow**](ContactsApi.md#addFollow) | **POST** /Contacts/{id}/Follow | Start following a Contact
-[**addLink**](ContactsApi.md#addLink) | **POST** /v3.0/Contacts/{id}/Links | Adds a Link
+[**addLink**](ContactsApi.md#addLink) | **POST** /v3.1/Contacts/{id}/Links | Adds a Link
 [**addNotes**](ContactsApi.md#addNotes) | **POST** /Contacts/{id}/Notes | Adds a Note to a Contact
 [**addTag**](ContactsApi.md#addTag) | **POST** /Contacts/{id}/Tags | Adds a Tag
 [**deleteDate**](ContactsApi.md#deleteDate) | **DELETE** /Contacts/{id}/Dates/{dateId} | Deletes a Date
@@ -27,13 +27,13 @@ Method | HTTP request | Description
 [**getFileAttachments**](ContactsApi.md#getFileAttachments) | **GET** /Contacts/{id}/FileAttachments | Gets a Contact&#39;s File Attachments
 [**getFollow**](ContactsApi.md#getFollow) | **GET** /Contacts/{id}/Follow | Gets a Follow state for a Contact
 [**getImage**](ContactsApi.md#getImage) | **GET** /Contacts/{id}/Image | Gets a Contact&#39;s Image
-[**getLinks**](ContactsApi.md#getLinks) | **GET** /v3.0/Contacts/{id}/Links | Gets a Contact&#39;s Links
+[**getLinks**](ContactsApi.md#getLinks) | **GET** /v3.1/Contacts/{id}/Links | Gets a Contact&#39;s Links
 [**getNotes**](ContactsApi.md#getNotes) | **GET** /Contacts/{id}/Notes | Gets a Contact&#39;s Notes
 [**getTasks**](ContactsApi.md#getTasks) | **GET** /Contacts/{id}/Tasks | Gets a list of a Contact&#39;s Tasks
 [**updateDate**](ContactsApi.md#updateDate) | **PUT** /Contacts/{id}/Dates | Updates a Date
 [**updateEntity**](ContactsApi.md#updateEntity) | **PUT** /Contacts | Updates a Contact
 [**updateImage**](ContactsApi.md#updateImage) | **PUT** /Contacts/{id}/Image/{filename} | Updates a Contact&#39;s Image
-[**updateLink**](ContactsApi.md#updateLink) | **PUT** /v3.0/Contacts/{id}/Links | Updates a Link
+[**updateLink**](ContactsApi.md#updateLink) | **PUT** /v3.1/Contacts/{id}/Links | Updates a Link
 [**updateNotes**](ContactsApi.md#updateNotes) | **PUT** /Contacts/{id}/Notes | Updates a note of a Contact
 
 
@@ -210,9 +210,9 @@ $apiInstance = new Swagger\Client\Api\ContactsApi(
 $id = 789; // int | Record ID
 $file = "/path/to/file.txt"; // \SplFileObject | The file part of the multipart/form-data request. Only one file can be added per request.
 $authorization = "{{Authorization}}"; // string | Authorization
-$file_name = "file_name_example"; // string | 
-$content_type = "content_type_example"; // string | 
-$file_category_id = 56; // int | 
+$file_name = "file_name_example"; // string |
+$content_type = "content_type_example"; // string |
+$file_category_id = 56; // int |
 
 try {
     $result = $apiInstance->addFileAttachment($id, $file, $authorization, $file_name, $content_type, $file_category_id);
@@ -1682,4 +1682,3 @@ No authorization required
  - **Accept**: application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
-

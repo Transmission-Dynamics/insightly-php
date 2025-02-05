@@ -1,6 +1,6 @@
 # Swagger\Client\OpportunitiesApi
 
-All URIs are relative to *https://api.insightly.com/v3.0*
+All URIs are relative to *https://api.insightly.com/v3.1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**addEntity**](OpportunitiesApi.md#addEntity) | **POST** /Opportunities | Adds an Opportunity
 [**addFileAttachment**](OpportunitiesApi.md#addFileAttachment) | **POST** /Opportunities/{id}/FileAttachments | Adds a File Attachment to an Opportunity
 [**addFollow**](OpportunitiesApi.md#addFollow) | **POST** /Opportunities/{id}/Follow | Start following an Opportunity
-[**addLink**](OpportunitiesApi.md#addLink) | **POST** /v3.0/Opportunities/{id}/Links | Adds a Link
+[**addLink**](OpportunitiesApi.md#addLink) | **POST** /v3.1/Opportunities/{id}/Links | Adds a Link
 [**addNotes**](OpportunitiesApi.md#addNotes) | **POST** /Opportunities/{id}/Notes | Adds a Note to an Opportunity
 [**addTag**](OpportunitiesApi.md#addTag) | **POST** /Opportunities/{id}/Tags | Adds a Tag
 [**deleteEntity**](OpportunitiesApi.md#deleteEntity) | **DELETE** /Opportunities/{id} | Deletes an Opportunity
@@ -27,13 +27,13 @@ Method | HTTP request | Description
 [**getFollow**](OpportunitiesApi.md#getFollow) | **GET** /Opportunities/{id}/Follow | Gets a Follow state for an Opportunity
 [**getImage**](OpportunitiesApi.md#getImage) | **GET** /Opportunities/{id}/Image | Gets an Opportunity&#39;s Image
 [**getLinkEmailAddress**](OpportunitiesApi.md#getLinkEmailAddress) | **GET** /Opportunities/{id}/LinkEmailAddress | Gets the email address to use for linking with the Opportunity
-[**getLinks**](OpportunitiesApi.md#getLinks) | **GET** /v3.0/Opportunities/{id}/Links | Gets an Opportunity&#39;s Links
+[**getLinks**](OpportunitiesApi.md#getLinks) | **GET** /v3.1/Opportunities/{id}/Links | Gets an Opportunity&#39;s Links
 [**getNotes**](OpportunitiesApi.md#getNotes) | **GET** /Opportunities/{id}/Notes | Gets an Opportunity&#39;s Notes
 [**getStateHistory**](OpportunitiesApi.md#getStateHistory) | **GET** /Opportunities/{id}/StateHistory | Gets the history of States and Reasons for an Opportunity.
 [**getTasks**](OpportunitiesApi.md#getTasks) | **GET** /Opportunities/{id}/Tasks | Gets a list of an Opportunity&#39;s Tasks
 [**updateEntity**](OpportunitiesApi.md#updateEntity) | **PUT** /Opportunities | Updates an Opportunity
 [**updateImage**](OpportunitiesApi.md#updateImage) | **PUT** /Opportunities/{id}/Image/{filename} | Updates an Opportunity&#39;s Image
-[**updateLink**](OpportunitiesApi.md#updateLink) | **PUT** /v3.0/Opportunities/{id}/Links | Updates a Link
+[**updateLink**](OpportunitiesApi.md#updateLink) | **PUT** /v3.1/Opportunities/{id}/Links | Updates a Link
 [**updateNotes**](OpportunitiesApi.md#updateNotes) | **PUT** /Opportunities/{id}/Notes | Updates a note of an Opportunity
 [**updateOpportunityState**](OpportunitiesApi.md#updateOpportunityState) | **PUT** /Opportunities/{id}/StateChange | Updates an Opportunity State
 [**updatePipeline**](OpportunitiesApi.md#updatePipeline) | **PUT** /Opportunities/{id}/Pipeline | Changes current pipeline for the Opportunity
@@ -162,9 +162,9 @@ $apiInstance = new Swagger\Client\Api\OpportunitiesApi(
 $id = 789; // int | Record ID
 $file = "/path/to/file.txt"; // \SplFileObject | The file part of the multipart/form-data request. Only one file can be added per request.
 $authorization = "{{Authorization}}"; // string | Authorization
-$file_name = "file_name_example"; // string | 
-$content_type = "content_type_example"; // string | 
-$file_category_id = 56; // int | 
+$file_name = "file_name_example"; // string |
+$content_type = "content_type_example"; // string |
+$file_category_id = 56; // int |
 
 try {
     $result = $apiInstance->addFileAttachment($id, $file, $authorization, $file_name, $content_type, $file_category_id);
@@ -1836,4 +1836,3 @@ No authorization required
  - **Accept**: application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
-

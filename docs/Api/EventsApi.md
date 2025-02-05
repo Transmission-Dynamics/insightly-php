@@ -1,17 +1,17 @@
 # Swagger\Client\EventsApi
 
-All URIs are relative to *https://api.insightly.com/v3.0*
+All URIs are relative to *https://api.insightly.com/v3.1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**addEntity**](EventsApi.md#addEntity) | **POST** /Events | Adds an Event
-[**addLink**](EventsApi.md#addLink) | **POST** /v3.0/Events/{id}/Links | Adds a Link
+[**addLink**](EventsApi.md#addLink) | **POST** /v3.1/Events/{id}/Links | Adds a Link
 [**deleteEntity**](EventsApi.md#deleteEntity) | **DELETE** /Events/{id} | Deletes an Event
 [**deleteLink**](EventsApi.md#deleteLink) | **DELETE** /Events/{id}/Links/{linkId} | Deletes a Link
 [**getEntities**](EventsApi.md#getEntities) | **GET** /Events | Gets a list of Events
 [**getEntitiesBySearch**](EventsApi.md#getEntitiesBySearch) | **GET** /Events/Search | Gets a filtered list of Events
 [**getEntity**](EventsApi.md#getEntity) | **GET** /Events/{id} | Gets an Event
-[**getLinks**](EventsApi.md#getLinks) | **GET** /v3.0/Events/{id}/Links | Gets an Event&#39;s Links
+[**getLinks**](EventsApi.md#getLinks) | **GET** /v3.1/Events/{id}/Links | Gets an Event&#39;s Links
 [**updateEntity**](EventsApi.md#updateEntity) | **PUT** /Events | Updates an Event
 
 
@@ -485,4 +485,3 @@ No authorization required
  - **Accept**: application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
-

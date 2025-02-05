@@ -1,12 +1,12 @@
 # Swagger\Client\EmailsApi
 
-All URIs are relative to *https://api.insightly.com/v3.0*
+All URIs are relative to *https://api.insightly.com/v3.1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**addComment**](EmailsApi.md#addComment) | **POST** /Emails/{id}/Comments | Adds a Comment to an Email
 [**addFollow**](EmailsApi.md#addFollow) | **POST** /Emails/{id}/Follow | Start following an Email
-[**addLink**](EmailsApi.md#addLink) | **POST** /v3.0/Emails/{id}/Links | Adds a Link
+[**addLink**](EmailsApi.md#addLink) | **POST** /v3.1/Emails/{id}/Links | Adds a Link
 [**addTag**](EmailsApi.md#addTag) | **POST** /Emails/{id}/Tags | Adds a Tag
 [**deleteEntity**](EmailsApi.md#deleteEntity) | **DELETE** /Emails/{id} | Deletes an Email
 [**deleteFollow**](EmailsApi.md#deleteFollow) | **DELETE** /Emails/{id}/Follow | Stop following an Email
@@ -19,7 +19,7 @@ Method | HTTP request | Description
 [**getEntity**](EmailsApi.md#getEntity) | **GET** /Emails/{id} | Gets an Email
 [**getFileAttachments**](EmailsApi.md#getFileAttachments) | **GET** /Emails/{id}/FileAttachments | Gets an Email&#39;s File Attachments
 [**getFollow**](EmailsApi.md#getFollow) | **GET** /Emails/{id}/Follow | Gets a Follow state for an Email
-[**getLinks**](EmailsApi.md#getLinks) | **GET** /v3.0/Emails/{id}/Links | Gets an Email&#39;s Links
+[**getLinks**](EmailsApi.md#getLinks) | **GET** /v3.1/Emails/{id}/Links | Gets an Email&#39;s Links
 
 
 # **addComment**
@@ -861,4 +861,3 @@ No authorization required
  - **Accept**: application/octet-stream, application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
-

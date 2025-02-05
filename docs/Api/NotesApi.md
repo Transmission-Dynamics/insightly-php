@@ -1,13 +1,13 @@
 # Swagger\Client\NotesApi
 
-All URIs are relative to *https://api.insightly.com/v3.0*
+All URIs are relative to *https://api.insightly.com/v3.1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**addComment**](NotesApi.md#addComment) | **POST** /Notes/{id}/Comments | Adds a Comment to a Note
 [**addFileAttachment**](NotesApi.md#addFileAttachment) | **POST** /Notes/{id}/FileAttachments | Adds a File Attachment to a Note
 [**addFollow**](NotesApi.md#addFollow) | **POST** /Notes/{id}/Follow | Start following a Note
-[**addLink**](NotesApi.md#addLink) | **POST** /v3.0/Notes/{id}/Links | Adds a Link
+[**addLink**](NotesApi.md#addLink) | **POST** /v3.1/Notes/{id}/Links | Adds a Link
 [**deleteEntity**](NotesApi.md#deleteEntity) | **DELETE** /Notes/{id} | Deletes a Note
 [**deleteFollow**](NotesApi.md#deleteFollow) | **DELETE** /Notes/{id}/Follow | Stop following a Note
 [**deleteLink**](NotesApi.md#deleteLink) | **DELETE** /Notes/{id}/Links/{linkId} | Deletes a Link
@@ -17,7 +17,7 @@ Method | HTTP request | Description
 [**getEntity**](NotesApi.md#getEntity) | **GET** /Notes/{id} | Gets a Note
 [**getFileAttachments**](NotesApi.md#getFileAttachments) | **GET** /Notes/{id}/FileAttachments | Gets a Note&#39;s File Attachments
 [**getFollow**](NotesApi.md#getFollow) | **GET** /Notes/{id}/Follow | Gets a Follow state for a Note
-[**getLinks**](NotesApi.md#getLinks) | **GET** /v3.0/Notes/{id}/Links | Gets a Note&#39;s Links
+[**getLinks**](NotesApi.md#getLinks) | **GET** /v3.1/Notes/{id}/Links | Gets a Note&#39;s Links
 [**updateEntity**](NotesApi.md#updateEntity) | **PUT** /Notes | Updates a Note
 
 
@@ -92,9 +92,9 @@ $apiInstance = new Swagger\Client\Api\NotesApi(
 $id = 789; // int | Record ID
 $file = "/path/to/file.txt"; // \SplFileObject | The file part of the multipart/form-data request. Only one file can be added per request.
 $authorization = "{{Authorization}}"; // string | Authorization
-$file_name = "file_name_example"; // string | 
-$content_type = "content_type_example"; // string | 
-$file_category_id = 56; // int | 
+$file_name = "file_name_example"; // string |
+$content_type = "content_type_example"; // string |
+$file_category_id = 56; // int |
 
 try {
     $result = $apiInstance->addFileAttachment($id, $file, $authorization, $file_name, $content_type, $file_category_id);
@@ -810,4 +810,3 @@ No authorization required
  - **Accept**: application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
-

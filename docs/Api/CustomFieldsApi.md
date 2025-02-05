@@ -1,6 +1,6 @@
 # Swagger\Client\CustomFieldsApi
 
-All URIs are relative to *https://api.insightly.com/v3.0*
+All URIs are relative to *https://api.insightly.com/v3.1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -25,7 +25,7 @@ $apiInstance = new Swagger\Client\Api\CustomFieldsApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$object_name = "object_name_example"; // string | 
+$object_name = "object_name_example"; // string |
 
 try {
     $result = $apiInstance->getCustomFields($object_name);
@@ -109,4 +109,3 @@ No authorization required
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
-
